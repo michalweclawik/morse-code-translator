@@ -20,27 +20,25 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
+
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
-Project compilted during software development course at \_nology. Purpose of this project was to cement and put in to practice Unit Testing with Jest knowledge.
+Project compilted during software development course at \_nology. Purpose of this project was to cement and put in to practice knowledge of Unit Testing with Jest .
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 Translator is fully web based.
 
-## 🔧 Running the tests <a name = "tests"></a>
-
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+- Chose translation direction
+- Type in text
+- Press translate button
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
