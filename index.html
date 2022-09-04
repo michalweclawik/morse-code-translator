@@ -5,12 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>ENG->Morse-Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./main.css">
+    <title>Morse Code Translator</title>
 </head>
 
 <body>
-    <script src="./translator.js"></script>
+    <header>
+        <h1>Online translator</h1>
+    </header>
+
+    <div class="translator">
+        <form class="translator__card">
+            <div class="translator__card__inputs">
+                <!-- LEFT PART OF TRANSLATOR -->
+                <div class="translator__card__inputs__left">
+                    <label for="translateTo">Translate to</label>
+                    <div class="translator__card__inputs__left__labels">
+                        <label for="english" class="morse-heading">MORSE CODE</label>
+                        <label for="english" class="english-heading">ENGLISH</label>
+                    </div>
+                    <div>
+                        <textarea type="text" id="typein" name="english" class="translator__input"
+                            placeholder="Type here">
+                        </textarea>
+                    </div>
+                </div>
+                <!-- RIGHT PART OF TRANSLATOR -->
+                <div class="translator__card__inputs__right">
+                    <div class="translator__card__inputs__right__label">
+                        <label for="translation">TRANSLATION</label>
+                    </div>
+                    <div id="translation"></div>
+                </div>
+            </div>
+            <input type="submit" value="TRANSLATE" class="translator__card__submit">
+        </form>
+    </div>
+    <script src="./main.js" type="module"></script>
 </body>
 
 </html>
