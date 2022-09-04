@@ -12,7 +12,7 @@
 
 ---
 
-<p align="center"> Online translator which  translate English to Morse code or Morse Code to English
+<p align="center"> Online translator which  translate English to Morse Code or Morse Code to English
     <br> 
 </p>
 
@@ -20,13 +20,9 @@
 
 Project compilted during software development course at \_nology. Purpose of this project was to cement and put in to practice knowledge of Unit Testing with Jest .
 
-#
-
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 Translator is fully web based.
-
-#
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -34,11 +30,7 @@ Translator is fully web based.
 - Type in text in text area
 - Press translate button
 
-#
-
 ## ⛏️ Built Using <a name = "built_using"></a>
-
-#
 
 <div>
 
@@ -50,7 +42,5 @@ Translator is fully web based.
 </div>
 
 ## ✍️ Author <a name = "authors"></a>
-
-#
 
 - [@michalweclawik](https://github.com/michalweclawik) - Idea & Initial work
