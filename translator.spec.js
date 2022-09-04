@@ -64,3 +64,42 @@ describe("Testing translateToEnglish, turn .... --- .-- / .- .-. . / -.-- --- ..
     })
 
 })
+describe("Testing translateToEnglish, turn .---- / ..--- / ...-- / ....- / ..... /  in to numbers, testing  space", () => {
+    it("a should translate to be *-", () => {
+        // Arrange
+        let string;
+        // Act
+        string = ".---- / ..--- / ...-- / ....- / ..... /";
+
+        let result = translateToEnglish(string);
+        // Assert
+        expect(result).toBe("1 2 3 4 5 ")
+    })
+
+})
+describe("Testing translateToEnglish, turn .-- .... .- - / .. ... / -.-- --- ..- / -. .- -- .  in to numbers, testing  space", () => {
+    it("a should translate to be *-", () => {
+        // Arrange
+        let string;
+        // Act
+        string = ".-- .... .- - / .. ... / -.-- --- ..- .-. / -. .- -- . ..--..";
+
+        let result = translateToEnglish(string);
+        // Assert
+        expect(result).toBe("WHAT IS YOUR NAME?")
+    })
+
+})
+describe('Testing translateToEnglish, turn .-..-. / -..-. / -.--. / -.--.- / ---... /  in to " / ( ) :', () => {
+    it("a should translate to be *-", () => {
+        // Arrange
+        let string;
+        // Act
+        string = ".-..-. / -..-. / -.--. / -.--.- / ---... /";
+
+        let result = translateToEnglish(string);
+        // Assert
+        expect(result).toBe('" / ( ) : ')
+    })
+
+})
