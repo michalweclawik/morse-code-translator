@@ -49,25 +49,20 @@ const morseCode = {
 
 }
 
-
-
-
-
 export const translateToMorse = (textInput) => {
-
-
-
     const arrayFromStrings = textInput.toUpperCase().split("");
-    console.log(arrayFromStrings);
 
     return arrayFromStrings
         .map(letter => morseCode[letter] + " ")
         .join("")
         .trim()
 }
-export const translateToEnglish = (textInput) => {
 
+
+
+export const translateToEnglish = (textInput) => {
     const arrayFromMorse = textInput.split(" ");
+
     return arrayFromMorse
         .map(letter => Object.keys(morseCode).find(key => morseCode[key] === letter))
         .join("");
