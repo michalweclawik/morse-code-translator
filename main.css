@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  padding: 5px 0;
+  margin: 0 15px;
+  font-size: 16px;
+  border-bottom: 2px solid black;
+}
+
+.translator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.translator__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  width: 600px;
+  background-color: #dbe4f1;
+  border-radius: 5px;
+}
+.translator__card__inputs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.translator__card__inputs__left {
+  width: 50%;
+}
+.translator__card__inputs__left label {
+  margin: 5px;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+.translator__card__inputs__left__labels {
+  padding: 0 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+.translator__card__inputs__left__labels label {
+  padding: 0 10px;
+}
+.translator__card__inputs__left__labels .english-active,
+.translator__card__inputs__left__labels .morse-active {
+  border: 2px solid red;
+  color: #1a73e8;
+  background-color: beige;
+}
+.translator__card__inputs__left #typein {
+  background-color: white;
+  padding: 5px 5px;
+  height: 200px;
+  width: 100%;
+  border: 0px;
+  font-size: 15px;
+  text-align: left;
+}
+.translator__card__inputs__right {
+  width: 50%;
+}
+.translator__card__inputs__right__label {
+  margin-top: 21px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 5px;
+  color: #606469;
+}
+.translator__card__inputs__right #translation {
+  padding: 0 5px;
+  background-color: whitesmoke;
+  height: 200px;
+}
+.translator__card__submit {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1967d2;
+  padding: 5px;
+  width: 120px;
+  margin: 10px;
+  border: 1px solid #dddddf;
+  background-color: whitesmoke;
+}
+.translator__card__submit:hover {
+  background-color: #e4ecfa;
+  cursor: pointer;
+}

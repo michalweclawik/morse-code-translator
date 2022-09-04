@@ -1,4 +1,126 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    padding: 5px 0;
+    margin: 0 15px;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+
+}
+
+
+
+.translator {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        width: 600px;
+        background-color: rgb(219, 228, 241);
+        border-radius: 5px;
+
+        &__inputs {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            &__left {
+                width: 50%;
+
+                label {
+                    margin: 5px;
+                    padding: 10px 10px;
+                    font-weight: bold;
+                }
+
+                &__labels {
+
+                    padding: 0 5px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    margin-top: 3px;
+
+                    label {
+                        padding: 0 10px;
+                    }
+
+                    .english-active,
+                    .morse-active {
+                        border: 2px solid red;
+                        color: rgb(26, 115, 232);
+                        background-color: beige;
+                    }
+                }
+
+                #typein {
+
+                    background-color: white;
+                    padding: 5px 5px;
+                    height: 200px;
+                    width: 100%;
+                    border: 0px;
+                    font-size: 15px;
+                    text-align: left;
+
+                }
+            }
+
+            &__right {
+                width: 50%;
+
+                &__label {
+                    margin-top: 21px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-weight: bold;
+                    padding: 0 5px;
+                    color: rgb(96, 100, 105);
+
+                }
+
+                #translation {
+
+                    padding: 0 5px;
+                    background-color: rgb(245, 245, 245);
+                    height: 200px;
+
+                }
+            }
+        }
+
+        &__submit {
+
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(25, 103, 210);
+            padding: 5px;
+            width: 120px;
+            margin: 10px;
+            border: 1px solid rgb(221, 221, 223);
+            background-color: whitesmoke
+        }
+
+        &__submit:hover {
+            background-color: rgb(228, 236, 250);
+            cursor: pointer;
+        }
+    }
 }
