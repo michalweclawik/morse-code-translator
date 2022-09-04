@@ -16,29 +16,25 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-
-- [Usage](#usage)
-- [Built Using](#built_using)
-
-- [Authors](#authors)
-
 ## 🧐 About <a name = "about"></a>
 
 Project compilted during software development course at \_nology. Purpose of this project was to cement and put in to practice knowledge of Unit Testing with Jest .
+
+#
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 Translator is fully web based.
 
+#
+
 ## 🎈 Usage <a name="usage"></a>
 
 - Chose translation direction
-- Type in text
+- Type in text in text area
 - Press translate button
+
+#
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
