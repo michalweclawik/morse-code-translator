@@ -100,3 +100,22 @@ header {
   background-color: #e4ecfa;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 480px) {
+  .translator__card__inputs__left {
+    font-size: 10px;
+  }
+  .translator__card__inputs__left__labels {
+    padding: 0 2px;
+  }
+  .translator__card__inputs__right__label {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 346px) {
+  .translator__card__inputs__right__label {
+    font-size: 10px;
+    margin-top: 27px;
+  }
+}
