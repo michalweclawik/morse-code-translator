@@ -15,8 +15,8 @@ describe("Testing translateToMorse, turn 'a' in to morse code", () => {
     })
 
 })
-describe("Testing translateToMorse, turn 'Sunny Sunday' in to morse code to test capital letters and space", () => {
-    it("a should translate to be *-", () => {
+describe("Testing translateToMorse, testing translation of capital letters and space", () => {
+    it("Sunny Sunday translate to ... ..- -. -. -.-- / ... ..- -. -.. .- -.-- ", () => {
         // Arrange
         let string;
         // Act
@@ -27,8 +27,8 @@ describe("Testing translateToMorse, turn 'Sunny Sunday' in to morse code to test
     })
 
 })
-describe("Testing translateToMorse, turn '1 2 3 4 5 ' in to morse code to test numbers and space", () => {
-    it("a should translate to be *-", () => {
+describe("Testing translateToMorse, testing translation of numbers and space", () => {
+    it("1 2 3 4 5 translate to .---- / ..--- / ...-- / ....- / ..... /", () => {
         // Arrange
         let string;
         // Act
@@ -39,8 +39,8 @@ describe("Testing translateToMorse, turn '1 2 3 4 5 ' in to morse code to test n
     })
 
 })
-describe("Testing translateToMorse, turn 'How are you?' in to morse code to test letters,  space, question mark ", () => {
-    it("a should translate to be *-", () => {
+describe("Testing translateToMorse, testing translation of letters,  space, question mark ", () => {
+    it("How are you? should translate to be .... --- .-- / .- .-. . / -.-- --- ..- ..--..", () => {
         // Arrange
         let string;
         // Act
@@ -51,8 +51,8 @@ describe("Testing translateToMorse, turn 'How are you?' in to morse code to test
     })
 
 })
-describe("Testing translateToEnglish, turn .... --- .-- / .- .-. . / -.-- --- ..- ..--..  in to english, testing  space, question mark ", () => {
-    it("a should translate to be *-", () => {
+describe("Testing translateToEnglish, testing translation of  space, question mark ", () => {
+    it(".... --- .-- / .- .-. . / -.-- --- ..- ..--..  should translate to be HOW ARE YOU?", () => {
         // Arrange
         let string;
         // Act
@@ -64,8 +64,8 @@ describe("Testing translateToEnglish, turn .... --- .-- / .- .-. . / -.-- --- ..
     })
 
 })
-describe("Testing translateToEnglish, turn .---- / ..--- / ...-- / ....- / ..... /  in to numbers, testing  space", () => {
-    it("a should translate to be *-", () => {
+describe("Testing translateToEnglish, testing translation of numbers, testing and  space", () => {
+    it(".---- / ..--- / ...-- / ....- / ..... / should translate to be 1 2 3 4 5 ", () => {
         // Arrange
         let string;
         // Act
@@ -77,8 +77,8 @@ describe("Testing translateToEnglish, turn .---- / ..--- / ...-- / ....- / .....
     })
 
 })
-describe("Testing translateToEnglish, turn .-- .... .- - / .. ... / -.-- --- ..- / -. .- -- .  in to numbers, testing  space", () => {
-    it("a should translate to be *-", () => {
+describe("Testing translateToEnglish,testing translation of simply sentence", () => {
+    it(".-- .... .- - / .. ... / -.-- --- ..- .-. / -. .- -- . ..--.. should translate to be WHAT IS YOUR NAME?", () => {
         // Arrange
         let string;
         // Act
@@ -90,8 +90,8 @@ describe("Testing translateToEnglish, turn .-- .... .- - / .. ... / -.-- --- ..-
     })
 
 })
-describe('Testing translateToEnglish, turn .-..-. / -..-. / -.--. / -.--.- / ---... /  in to " / ( ) :', () => {
-    it("a should translate to be *-", () => {
+describe('Testing translateToEnglish, testing translation of  " / ( ) :', () => {
+    it('.-..-. / -..-. / -.--. / -.--.- / ---... / should translate to be " / ( ) : ', () => {
         // Arrange
         let string;
         // Act

@@ -56,6 +56,7 @@ var morseCode = {
 
 var translateToMorse = function translateToMorse(textInput) {
   var arrayFromStrings = textInput.toUpperCase().split("");
+  console.log("arrayFromStrings");
   return arrayFromStrings.map(function (letter) {
     return morseCode[letter] + " ";
   }).join("").trim();

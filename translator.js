@@ -51,6 +51,7 @@ const morseCode = {
 
 export const translateToMorse = (textInput) => {
     const arrayFromStrings = textInput.toUpperCase().split("");
+    console.log("arrayFromStrings")
 
     return arrayFromStrings
         .map(letter => morseCode[letter] + " ")
